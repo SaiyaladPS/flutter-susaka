@@ -87,6 +87,27 @@ class MainMenuPage extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 40,
+                  vertical: 15,
+                ),
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.count);
+              },
+              child: const Text(
+                'ໄປໜ້າ Count',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                  fontFamily: 'Noto Sans Lao',
+                ),
+              ),
+            ),
           ],
         ),
       ),
