@@ -42,6 +42,26 @@ class MainMenuPage extends StatelessWidget {
 
   static const List<_MenuGroup> _menuGroups = [
     _MenuGroup(
+      title: 'ວຽກບ້ານ / Assignment',
+      subtitle: 'UI from Images',
+      items: [
+        _MenuItem(
+          title: 'ໜ້າສອບເສັງ SIT',
+          subtitle: 'Exam Subject List & Detail',
+          routeName: AppRouter.examList,
+          color: Colors.indigo,
+          icon: Icons.assignment,
+        ),
+        _MenuItem(
+          title: 'Admin Dashboard',
+          subtitle: 'Dashboard UI',
+          routeName: AppRouter.adminDashboard,
+          color: Colors.deepPurple,
+          icon: Icons.dashboard,
+        ),
+      ],
+    ),
+    _MenuGroup(
       title: 'ກຸ່ມຈັດການຂໍ້ມູນ',
       subtitle: 'Data Management',
       items: [
